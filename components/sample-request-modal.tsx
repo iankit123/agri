@@ -107,6 +107,10 @@ export function SampleRequestModal({ open, onOpenChange, product }: SampleReques
           <DialogDescription>
             Fill in your details to request a sample. We'll contact you shortly.
           </DialogDescription>
+          <div className="mt-2 rounded-md bg-blue-50 p-3 text-sm text-blue-800">
+            <p className="font-medium">Delivery Charges:</p>
+            <p>₹100 + GST across Jaipur</p>
+          </div>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
