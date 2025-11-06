@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { createClient } from '@/lib/supabase/client'
@@ -39,20 +40,32 @@ export function Navbar() {
     getUser()
   }, [])
 
-  const handleLogout = async () => {
+  const handleLogout = () => {
     if (typeof window !== 'undefined') {
       localStorage.removeItem('agrilink_user')
+      setUser(null) // Clear user state immediately
+      // Force a full page reload to ensure clean state
+      window.location.href = '/'
     }
-    router.push('/')
-    router.refresh()
   }
 
   return (
     <nav className="border-b border-gray-200 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-green-600">
-            AgriLink Jaipur
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/logo.png"
+              alt="AgriLink Jaipur Logo"
+              width={40}
+              height={40}
+              className="h-10 w-10 object-contain"
+              priority
+            />
+            <div className="flex flex-col">
+              <span className="text-lg font-bold text-gray-800">AgriLink</span>
+              <span className="text-xs text-gray-600 -mt-1">Jaipur</span>
+            </div>
           </Link>
           <div className="flex items-center gap-4">
             {user ? (
@@ -75,10 +88,10 @@ export function Navbar() {
             ) : (
               <>
                 <Link href="/login">
-                  <Button variant="ghost">Login</Button>
+                  <Button variant="ghost">Buyer Login</Button>
                 </Link>
                 <Link href="/login">
-                  <Button>Sign Up</Button>
+                  <Button variant="outline">Seller Login</Button>
                 </Link>
               </>
             )}
