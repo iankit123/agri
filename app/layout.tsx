@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AgriLink Jaipur - B2B Spice Trading Marketplace",
+  title: "Bharat Mandi - B2B Spice Trading Marketplace",
   description: "Connect verified sellers and buyers for heeng, ilaichi, and saunf trading",
 };
 

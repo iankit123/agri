@@ -1,4 +1,4 @@
-# AgriLink Jaipur - B2B Spice Trading Marketplace
+# Bharat Mandi - B2B Spice Trading Marketplace
 
 A production-ready web application for B2B spice trading, focused on heeng (asafoetida), ilaichi (cardamom), and saunf (fennel seeds). Built with Next.js, TypeScript, TailwindCSS, and Supabase.
 

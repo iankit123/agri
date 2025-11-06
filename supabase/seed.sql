@@ -1,4 +1,4 @@
--- Seed dummy data for AgriLink Jaipur
+-- Seed dummy data for Bharat Mandi
 -- Run this after creating the schema
 -- Uses INSERT ... ON CONFLICT to avoid errors if data already exists
 

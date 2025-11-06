@@ -1,4 +1,4 @@
--- AgriLink Jaipur Schema
+-- Bharat Mandi Schema
 -- Safe schema creation - only creates tables if they don't exist
 -- Uses prefixed table names to avoid conflicts with other projects
 

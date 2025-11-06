@@ -56,15 +56,14 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/logo.png"
-              alt="AgriLink Jaipur Logo"
+              alt="Bharat Mandi Logo"
               width={40}
               height={40}
               className="h-10 w-10 object-contain"
               priority
             />
             <div className="flex flex-col">
-              <span className="text-lg font-bold text-gray-800">AgriLink</span>
-              <span className="text-xs text-gray-600 -mt-1">Jaipur</span>
+              <span className="text-lg font-bold text-gray-800">Bharat Mandi</span>
             </div>
           </Link>
           <div className="flex items-center gap-4">

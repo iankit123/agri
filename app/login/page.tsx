@@ -103,7 +103,7 @@ export default function LoginPage() {
             <CardTitle>{isSignUp ? 'Create Account' : 'Login'}</CardTitle>
             <CardDescription>
               {isSignUp
-                ? 'Join AgriLink Jaipur as a buyer or seller'
+                ? 'Join Bharat Mandi as a buyer or seller'
                 : 'Enter your email or phone to continue'}
             </CardDescription>
           </CardHeader>
